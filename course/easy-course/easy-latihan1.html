@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Latihan 1 - Perkenalan</title>
+  <!-- Fav Icon-->
+  <link rel="shortcut icon" href="/assets/icon/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (optional, kalau pakai ikon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap JS Bundle (sudah termasuk Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+   .slider-img-wrapper {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .slider-controls {
+    background-color: #64c8ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+  }
+
+  .slider-controls:hover {
+    background-color: #47aee0;
+  }
+
+  
+
+    .slider-controls:hover {
+      background-color: #42b1eb;
+    }
+
+    .vocab-card-wrapper {
+      background-color: #f8fcff;
+      padding: 40px 0;
+    }
+
+    footer {
+      background-color: #64c8ff;
+      color: white;
+      padding: 40px 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #64c8ff;">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">
+        <img src="/assets/icon/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top rounded">
+        Mamoru
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center d-flex gap-3">
+          <li class="nav-item"><a class="nav-link text-white" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../../index.html#courses">Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero -->
+<section class="py-5 text-center vocab-card-wrapper">
+  <div class="container">
+    <h1 class="fw-bold mb-2">Latihan 1: Perkenalan</h1>
+    <p class="text-muted">Mari belajar kosakata untuk memperkenalkan diri!</p>
+  </div>
+</section>
+
+<!-- Slider Section -->
+<section class="py-4 text-center">
+  <div class="container">
+    <div class="slider-wrapper d-flex align-items-center justify-content-center flex-wrap">
+      <!-- Tombol kiri (Desktop) -->
+      <button class="slider-controls d-none d-sm-inline-block" onclick="prevImage()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+
+      <!-- Gambar -->
+      <div class="slider-img-wrapper mx-3 my-3">
+        <img id="vocabImage" src="/assets/easy-1/1.png" alt="Vocab Image" class="img-fluid slider-img" />
+      </div>
+
+      <!-- Tombol kanan (Desktop) -->
+      <button class="slider-controls d-none d-sm-inline-block" onclick="nextImage()">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Tombol kiri dan kanan (Mobile di bawah gambar) -->
+    <div class="d-sm-none d-flex justify-content-center gap-4 mt-3">
+      <button class="slider-controls" onclick="prevImage()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="slider-controls" onclick="nextImage()">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-white text-center">
+  <p>&copy; 2025 Mamoru. All Rights Reserved.</p>
+</footer>
+
+<!-- Script -->
+<script>
+  const totalImages = 10; // jumlah total gambar
+  let currentIndex = 1;
+
+  const image = document.getElementById("vocabImage");
+  const container = document.querySelector(".slider-img-wrapper");
+
+  function updateImage() {
+    image.src = `/assets/easy-1/${currentIndex}.png`;
+  }
+
+  function nextImage() {
+    currentIndex = currentIndex < totalImages ? currentIndex + 1 : 1;
+    updateImage();
+  }
+
+  function prevImage() {
+    currentIndex = currentIndex > 1 ? currentIndex - 1 : totalImages;
+    updateImage();
+  }
+
+  // 🔄 Navigasi via Keyboard
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowRight") {
+      nextImage();
+    } else if (event.key === "ArrowLeft") {
+      prevImage();
+    }
+  });
+
+  // 📱 Swipe Gesture untuk Mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  container.addEventListener("touchstart", function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  container.addEventListener("touchend", function (e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const threshold = 50;
+    if (touchEndX < touchStartX - threshold) {
+      nextImage();
+    } else if (touchEndX > touchStartX + threshold) {
+      prevImage();
+    }
+  }
+</script>
+
+
+</body>
+</html>

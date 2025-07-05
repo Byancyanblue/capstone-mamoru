@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fav Icon-->
+    <link rel="shortcut icon" href="assets/icon/icon.png">
+
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Animate Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <title>Hello, Mamoru!</title>
+  </head>
+  <body id="home">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-biru-muda animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/icon/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top rounded">
+                <span class="fw-bold text-white">Mamoru</span>
+            </a>
+            <button class="navbar-toggler bg-white shadow-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#courses">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+
+
+   <!-- Hero -->
+    <section class="hero overflow-hidden">
+        <div class="container">
+            <div class="hero-box d-flex align-items-center justify-content-between flex-md-row flex-column gap-md-0 gap-5">
+                <div class="box animate__animated animate__fadeInLeft animate__delay-1s">
+                    <h1 class="fw-bold mb-3">
+                        Let's Learn <br>
+                        <span class="text-biru-muda">Kotoba</span> Everyday!
+                        
+                    </h1>
+                    <p class="lh-lg mb-4">
+                        Platform pembelajaran interaktif dalam pengembangan kemampuan berbahasa jepang
+                        melalui latihan kosakata dengan tingkatan kemampuan yang variatif
+                    </p>
+                    <a href="#about" class="btn btn-biru-muda">Tentang Kami</a>
+                    <a href="#courses" class="btn btn-outline-biru-muda">Our Course</a>
+                </div>
+                <div class="box animate__animated animate__fadeInRight animate__delay-1s">
+                    <img src="./assets/images/hero.svg" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero -->
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-box text-center">
+                <h1 class="fw-bold mb-4 text-biru-muda" data-aos="fade-up" data-aos-duration="1000">Tentang Kami</h1>
+                <p class="lh-lg mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    Mamoru adalah sebuah platform sederhana yang dirancang untuk membantu pengembangan kemampuan berbahasa Jepang secara interaktif dan menyenangkan. 
+                </p>
+                <img src="./assets/images/about.svg" alt="about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+
+    <!-- Service -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-box">
+                <h1 class="fw-bold mb-3 text-biru-muda" data-aos="fade-up" data-aos-duration="1000">Layanan</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    Mamoru menyediakan berbagai fitur interaktif untuk mendukung proses belajar bahasa Jepang secara menyenangkan, fleksibel, dan terstruktur.
+                </p>
+                <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+                    <div class="service p-4 shadow bg-biru-muda rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <i class="fa-solid fa-folder-tree mb-3 fs-3"></i>
+                        <h4 class="mb-3 fw-bold">Materi Terstruktur</h4>
+                        <p class="lh-lg">Materi pembelajaran disusun berdasarkan level kemampuan pengguna, membantu pengguna memahami bahasa Jepang dari dasar hingga mahir.</p>
+                    </div>
+                    <div class="service p-4 shadow bg-biru-muda rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                        <i class="fa-solid fa-user-tie mb-3 fs-3"></i>
+                        <h4 class="mb-3 fw-bold">Latihan Interaktif</h4>
+                        <p class="lh-lg">Tersedia latihan kosakata, kuis, percakapan, dan evaluasi yang dirancang untuk meningkatkan kemampuan membaca, menulis, dan berbicara.</p>
+                    </div>
+                    <div class="service p-4 shadow bg-biru-muda rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                        <i class="fa-solid fa-star mb-3 fs-3"></i>
+                        <h4 class="mb-3 fw-bold">Update Materi Berkala</h4>
+                        <p class="lh-lg">Konten pembelajaran selalu diperbarui secara berkala agar tetap relevan dan menyesuaikan kebutuhan pengguna dalam pembelajaran.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service -->
+
+
+    <!-- Courses -->
+    <section class="courses overflow-hidden" id="courses">
+        <div class="container px-4">
+            <div class="courses-box">
+                <h1 class="fw-bold mb-3 text-center text-biru-muda" data-aos="fade-up" data-aos-duration="1000">Course Interaktif</h1>
+                <p class="lh-lg text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    Mari latih kemampuan <strong>kotoba</strong> kalian dengan menyenangkan!
+                </p>
+
+                <div class="row justify-content-center pt-4 gap-4">
+                    <!-- Easy -->
+                    <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="image-box">
+                            <img src="./assets/image_course/easy.jpg" alt="Easy Course" class="img-fluid">
+                        </div>
+                        <h4 class="pt-4 text-success fw-bold">Easy Level</h4>
+                        <p>Mulai dari dasar kosakata yang ringan dan menyenangkan. Cocok untuk pemula!</p>
+                        <div>
+                            <a href="course/course-easy.html" class="btn btn-biru-muda">Mulai Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="image-box">
+                            <img src="./assets/image_course/intermediate.jpg" alt="Intermediate Course" class="img-fluid">
+                        </div>
+                        <h4 class="pt-4 text-warning fw-bold">Intermediate Level</h4>
+                        <p>Latihan kosakata menengah dengan lebih banyak tantangan dan penggunaan konteks.</p>
+                        <div>
+                            <button onclick="showComingSoon()" class="btn btn-biru-muda">Mulai Course</button>
+                        </div>
+                    </div>
+
+                    <!-- Hard -->
+                    <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+                        <div class="image-box">
+                            <img src="./assets/image_course/hard.jpg" alt="Hard Course" class="img-fluid">
+                        </div>
+                        <h4 class="pt-4 text-danger fw-bold">Hard Level</h4>
+                        <p>Uji kemampuan kamu dengan kosakata kompleks, idiom, dan ungkapan formal.</p>
+                    <div>
+                            <button onclick="showComingSoon()" class="btn btn-biru-muda">Mulai Course</button>
+                        </div>
+                    </div>
+
+                    <!-- Sensei -->
+                    <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                        <div class="image-box">
+                            <img src="./assets/image_course/sensei.jpg" alt="Sensei Course" class="img-fluid">
+                        </div>
+                        <h4 class="pt-4 text-dark fw-bold">Sensei Level</h4>
+                        <p>Level tertinggi! Asah kemampuan seperti native melalui studi kasus & latihan nyata.</p>
+                    <div>
+                            <button onclick="showComingSoon()" class="btn btn-biru-muda">Mulai Course</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Courses -->
+
+
+
+   <!-- FAQ -->
+    <section class="faq bg-soft-blue" id="faq">
+        <div class="container">
+            <div class="faq-box">
+                <h1 class="fw-bold mb-3 text-center text-biru-muda" data-aos="fade-up" data-aos-duration="1000">FAQ</h1>
+                <p class="lh-lg text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                     Temukan jawaban dari pertanyaan umum seputar penggunaan platform Mamoru. Jika ada hal yang belum terjawab, jangan ragu untuk menghubungi kami.
+                </p>
+                <div class="accordion pt-4" id="accordionExample">
+                    <div class="row row-cols-md-2 row-cols-1 g-4">
+
+                        <!-- FAQ Item 1 -->
+                        <div class="col">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed bg-biru-muda fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                       Apa itu Mamoru dan siapa yang bisa menggunakannya?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Mamoru adalah platform pembelajaran bahasa Jepang yang dapat digunakan oleh siapa saja, dari pemula hingga tingkat lanjut.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="col">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed bg-biru-muda fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Apakah Mamoru gratis untuk digunakan selama pembelajaran?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <strong>Ya</strong>, seluruh materi dan fitur di Mamoru dapat diakses secara gratis tanpa biaya langganan.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="col">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed bg-biru-muda fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Apakah saya perlu mendaftar untuk mulai belajar?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Sebagian besar materi dapat diakses tanpa akun, tetapi membuat akun akan membantu Anda menyimpan progres belajar.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="col">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed bg-biru-muda fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Apakah Mamoru memiliki level pembelajaran?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Ya</strong>, materi Mamoru terbagi ke dalam beberapa level: 
+                                        <span class="level-easy">Easy</span>, 
+                                        <span class="level-intermediate">Intermediate</span>, 
+                                        <span class="level-hard">Hard</span>, dan 
+                                        <span class="level-sensei">Sensei</span>, 
+                                        agar sesuai dengan kemampuan pengguna.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="col">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed bg-biru-muda fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        Apa saja fitur yang tersedia di Mamoru?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Mamoru menyediakan materi terstruktur, latihan kosakata, kuis, percakapan interaktif, dan update materi berkala.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="col">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed bg-biru-muda fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                        How to train your dragon?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        First, earn its trust... 🐉😉. (Jangan lupa belajar di Mamoru juga ya!)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- row -->
+                </div> <!-- accordion -->
+            </div> <!-- faq-box -->
+        </div> <!-- container -->
+    </section>
+    <!-- FAQ -->
+
+    <!-- Footer -->
+    <section class="footer bg-biru-muda pt-5 pb-4">
+        <div class="container">
+            <div class="footer-box">
+                <div class="row justify-content-between gap-5">
+                    <!-- Brand -->
+                    <div class="col col-md-4 col-12 text-white">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <img src="assets/icon/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top rounded">
+                            <h2 class="fw-bold m-0">Mamoru</h2>
+                        </div>
+                        <p class="lh-lg m-0" style="color: rgba(255, 255, 255, 0.75);">
+                            Mamoru helps you learn Japanese interactively — anytime, anywhere.
+                        </p>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="col col-md-2 col-12 d-flex flex-column text-white gap-2">
+                        <h4 class="fw-bold">Menu</h4>
+                        <a href="#home" class="text-white text-decoration-none">Home</a>
+                        <a href="#about" class="text-white text-decoration-none">About</a>
+                        <a href="#services" class="text-white text-decoration-none">Services</a>
+                        <a href="#courses" class="text-white text-decoration-none">Course</a>
+                        <a href="#faq" class="text-white text-decoration-none">FAQ</a>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
+                        <h4 class="fw-bold">Contact Us</h4>
+                        <p class="m-0 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            emailperson@gmail.com
+                        </p>
+                        <p class="m-0 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            +62 08080 08080 08
+                        </p>
+                        <p class="m-0 d-flex align-items-center gap-2 lh-lg">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Jl. Abrudarmahn Gedung 201, New City, Pontianak
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright text-center text-white pt-4 mt-4 ">
+                <p class="lh-lg m-0">&copy; Copyright by <span class="fw-bold">Mamoru</span> 2025, All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+   
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+        function showComingSoon() {
+            Swal.fire({
+                title: "Course Sedang Dalam Proses!!!",
+                text: "Gomennasai~ 🙇‍♀️",
+                imageUrl: "./assets/images/sorry.png",
+                imageWidth: 200,
+                imageHeight: 200,
+                imageAlt: "Gomen",
+                confirmButtonText: "Mengerti",
+                confirmButtonColor: '#00BFFF'
+            });
+        }
+    </script>
+
+  </body>
+</html>
